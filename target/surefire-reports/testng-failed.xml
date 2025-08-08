@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="url" value="https://www.demoblaze.com/"/>
+  <listeners>
+    <listener class-name="utils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tests.AddCartTest">
+        <methods>
+          <include name="browserLaunchAndUrlLoad"/>
+          <include name="testDeatils"/>
+          <include name="AddcartTest"/>
+          <include name="createReport"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- tests.AddCartTest -->
+      <class name="tests.SignUpTest">
+        <methods>
+          <include name="browserLaunchAndUrlLoad"/>
+          <include name="testDeatils"/>
+          <include name="createReport"/>
+          <include name="setup"/>
+          <include name="SignupTest" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- tests.SignUpTest -->
+      <class name="tests.LogInTest">
+        <methods>
+          <include name="LoginTest" invocation-numbers="0"/>
+          <include name="browserLaunchAndUrlLoad"/>
+          <include name="testDeatils"/>
+          <include name="setup"/>
+          <include name="createReport"/>
+          <include name="teardown"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- tests.LogInTest -->
+      <class name="tests.PlacingOrderTest">
+        <methods>
+          <include name="browserLaunchAndUrlLoad"/>
+          <include name="testDeatils"/>
+          <include name="createReport"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="closeReport"/>
+          <include name="PlaceorderTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.PlacingOrderTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
